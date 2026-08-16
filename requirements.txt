@@ -2,10 +2,6 @@
 # The Shaan Collective — Project Environment & Dependency Requirements
 # ==============================================================================
 
-# Core Runtime Environment
-node>=18.0.0
-npm>=9.0.0
-
 # Frontend Dependencies (Node.js / npm)
 # react: ^19.2.8
 # react-dom: ^19.2.8
