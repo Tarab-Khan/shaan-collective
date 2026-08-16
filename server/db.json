@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": "usr_royal_001",
+      "name": "Maharani Aishwarya Singh",
+      "firstName": "Aishwarya",
+      "lastName": "Singh",
+      "phone": "9876543210",
+      "email": "aishwarya.singh@royalatelier.in",
+      "newsletter": true,
+      "role": "VIP Patron",
+      "createdAt": "2026-08-16T14:18:56.722Z"
+    },
+    {
+      "id": "usr_royal_002",
+      "name": "Raja Vikramaditya Dev",
+      "firstName": "Vikramaditya",
+      "lastName": "Dev",
+      "phone": "9123456780",
+      "email": "vikramaditya@heritage.in",
+      "newsletter": true,
+      "role": "Atelier Member",
+      "createdAt": "2026-08-16T14:18:56.724Z"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "addr_001",
+      "userId": "usr_royal_001",
+      "phone": "9876543210",
+      "fullName": "Maharani Aishwarya Singh",
+      "houseNo": "The Royal Palace, Suite 108",
+      "area": "Civil Lines, Palace Road",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "pincode": "302006",
+      "isDefault": true
+    }
+  ],
+  "heroBanners": {
+    "home": "",
+    "women": "",
+    "men": "",
+    "jewellery": "",
+    "accessories": ""
+  },
+  "products": {
+    "women": [],
+    "men": [],
+    "accessories": [],
+    "jewellery": []
+  },
+  "orders": [],
+  "paymentLogs": []
+}

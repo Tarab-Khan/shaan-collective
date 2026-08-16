@@ -1,0 +1,324 @@
+@import "tailwindcss";
+
+/* =========================================================
+   THE SHAAN COLLECTIVE
+   ROYAL GOLD & OBSIDIAN NOIR DESIGN SYSTEM
+   ========================================================= */
+
+:root {
+  --noir: #070605;
+  --noir-soft: #0c0a08;
+  --noir-card: #12100d;
+  --noir-elevated: #181511;
+  --noir-border: #262017;
+
+  --gold: #dfba6a;
+  --gold-bright: #fae39d;
+  --gold-light: #eed9a4;
+  --gold-deep: #b88e36;
+  --gold-dark: #8c671d;
+
+  --text-gold-light: #f5eedc;
+  --text-gold-main: #e8dbbf;
+  --text-gold-muted: #c4b28f;
+  --text-gold-dim: #948060;
+
+  --border-gold-subtle: rgba(223, 186, 106, 0.22);
+  --border-gold-medium: rgba(223, 186, 106, 0.45);
+  --border-gold-bright: rgba(223, 186, 106, 0.85);
+
+  --shadow-gold-subtle: 0 4px 25px rgba(223, 186, 106, 0.08);
+  --shadow-gold-glow: 0 0 30px rgba(223, 186, 106, 0.22);
+  --shadow-gold-intense: 0 0 50px rgba(250, 227, 157, 0.35);
+
+  --font-serif: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CUSTOM LUXURY GOLDEN MOUSE CURSOR
+   ========================================= */
+
+html, body, * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cdefs%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fff1b8'/%3E%3Cstop offset='40%25' stop-color='%23fae39d'/%3E%3Cstop offset='70%25' stop-color='%23dfba6a'/%3E%3Cstop offset='100%25' stop-color='%23b88e36'/%3E%3C/linearGradient%3E%3Cfilter id='glow' x='-30%25' y='-30%25' width='160%25' height='160%25'%3E%3CfeDropShadow dx='0' dy='1' stdDeviation='1' flood-color='%23000000' flood-opacity='0.9'/%3E%3CfeDropShadow dx='0' dy='0' stdDeviation='1.5' flood-color='%23fae39d' flood-opacity='0.8'/%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M3 2 L3 19 L7.5 14.5 L11.5 21 L14 19.5 L10 13 L16 13 Z' fill='url(%23gold)' stroke='%23070605' stroke-width='0.8' filter='url(%23glow)'/%3E%3C/svg%3E") 3 2, auto;
+}
+
+a, button, [role="button"], input[type="submit"], input[type="button"], select, .cursor-pointer {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cdefs%3E%3ClinearGradient id='gold-p' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fff1b8'/%3E%3Cstop offset='35%25' stop-color='%23fae39d'/%3E%3Cstop offset='75%25' stop-color='%23dfba6a'/%3E%3Cstop offset='100%25' stop-color='%23b88e36'/%3E%3C/linearGradient%3E%3Cfilter id='glow-p' x='-30%25' y='-30%25' width='160%25' height='160%25'%3E%3CfeDropShadow dx='0' dy='1' stdDeviation='1' flood-color='%23000000' flood-opacity='0.9'/%3E%3CfeDropShadow dx='0' dy='0' stdDeviation='1.8' flood-color='%23fae39d' flood-opacity='0.9'/%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M7.5 2a1.5 1.5 0 0 0-1.5 1.5v8.2a2.5 2.5 0 0 0-1.7-.7c-1 0-1.8.8-1.8 1.8 0 3.8 3.2 8.2 7.5 8.2 4.5 0 6.5-2.8 6.5-6.5v-4.5a1.5 1.5 0 0 0-3 0v-1a1.5 1.5 0 0 0-3 0v-1a1.5 1.5 0 0 0-3 0V3.5A1.5 1.5 0 0 0 7.5 2z' fill='url(%23gold-p)' stroke='%23070605' stroke-width='0.8' filter='url(%23glow-p)'/%3E%3C/svg%3E") 7 2, pointer !important;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cdefs%3E%3ClinearGradient id='gold-t' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fae39d'/%3E%3Cstop offset='100%25' stop-color='%23dfba6a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M9 4 L15 4 M12 4 L12 20 M9 20 L15 20' stroke='url(%23gold-t)' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") 12 12, text;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--noir);
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--noir);
+  color: var(--text-gold-main);
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(223, 186, 106, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(184, 142, 54, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Allow text selection & editing strictly inside input fields and textareas */
+input, textarea, [contenteditable="true"] {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Prevent image dragging or ghost selection */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
+}
+
+#root {
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* =========================================
+   LUXURY GOLD TYPOGRAPHY
+   ========================================= */
+
+h1, h2, h3, h4, h5, h6,
+.font-serif {
+  font-family: var(--font-serif);
+  color: var(--gold-light);
+  letter-spacing: 0.06em;
+}
+
+p {
+  color: var(--text-gold-main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Gold Gradient Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #fae39d 0%, #dfba6a 45%, #b88e36 85%, #eed9a4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow-text {
+  color: var(--gold-bright);
+  text-shadow: 0 0 20px rgba(250, 227, 157, 0.4);
+}
+
+/* =========================================
+   LUXURY GOLD BUTTONS
+   ========================================= */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 1px solid var(--gold-bright);
+  outline-offset: 2px;
+}
+
+/* Primary Brushed Gold Button */
+.btn-gold-primary,
+.ts-gold-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fae39d 0%, #dfba6a 45%, #c59738 100%);
+  color: #070605 !important;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid #fae39d;
+  box-shadow: 0 4px 20px rgba(223, 186, 106, 0.25);
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold-primary:hover,
+.ts-gold-button:hover {
+  background: linear-gradient(135deg, #fff1b8 0%, #eed27e 50%, #d8a846 100%);
+  box-shadow: 0 0 30px rgba(250, 227, 157, 0.45);
+  transform: translateY(-1px);
+  color: #000000 !important;
+}
+
+/* Solid Gold Button Utility */
+.btn-gold-solid {
+  background-color: #dfba6a !important;
+  color: #070605 !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+.btn-gold-solid:hover {
+  background-color: #fae39d !important;
+  color: #000000 !important;
+}
+
+/* =========================================
+   CARDS & PANELS
+   ========================================= */
+
+.gold-card,
+.ts-card {
+  background: var(--noir-card);
+  border: 1px solid var(--border-gold-subtle);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.gold-card:hover,
+.ts-hover-card:hover {
+  border-color: var(--border-gold-bright);
+  box-shadow: var(--shadow-gold-glow);
+  transform: translateY(-3px);
+}
+
+/* Golden hairline divider */
+.gold-divider,
+.ts-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(223, 186, 106, 0.65) 50%, transparent);
+}
+
+.gold-divider-short,
+.ts-divider-short {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, #b88e36, #fae39d, #b88e36);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   INPUTS & FORM CONTROLS
+   ========================================= */
+
+input,
+textarea,
+select {
+  background: #100e0a;
+  color: var(--text-gold-light);
+  border: 1px solid rgba(223, 186, 106, 0.35);
+  caret-color: var(--gold-bright);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 15px rgba(223, 186, 106, 0.25);
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-gold-dim);
+}
+
+/* =========================================
+   CUSTOM SCROLLBAR
+   ========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070605;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #b88e36, #dfba6a, #8c671d);
+  border-radius: 4px;
+  border: 2px solid #070605;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fae39d;
+}
+
+/* =========================================
+   SELECTION
+   ========================================= */
+
+::selection {
+  background: #dfba6a;
+  color: #070605;
+}
+
+/* =========================================
+   PULSE & GLOW ANIMATIONS
+   ========================================= */
+
+@keyframes gold-pulse {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(223, 186, 106, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(250, 227, 157, 0.45);
+  }
+}
+
+.animate-gold-pulse {
+  animation: gold-pulse 3s infinite ease-in-out;
+}
+
+/* Glow ring */
+.gold-glow-ring {
+  box-shadow: 0 0 35px rgba(223, 186, 106, 0.3), inset 0 0 25px rgba(223, 186, 106, 0.2);
+}
+
+/* Rating Stars */
+.gold-stars {
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}

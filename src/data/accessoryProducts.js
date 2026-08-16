@@ -1,0 +1,103 @@
+import accessory1 from "../assets/accessory-1.png";
+import accessory2 from "../assets/accessory-2.png";
+import accessory3 from "../assets/accessory-3.png";
+import accessory4 from "../assets/accessory-4.png";
+import accessory5 from "../assets/accessory-5.png";
+import accessory6 from "../assets/accessory-6.png";
+import accessory7 from "../assets/accessory-7.png";
+import accessory8 from "../assets/accessory-8.png";
+
+export const accessoryProducts = [
+  {
+    id: 1,
+    name: "Embellished Clutch",
+    price: 8500,
+    category: "Bags",
+    color: "Gold",
+    fabric: "Silk",
+    image: accessory1,
+    isNewArrival: true,
+    gender: "Women",
+    occasion: ["Bridal", "Wedding"],
+  },
+  {
+    id: 2,
+    name: "Embroidered Belt",
+    price: 4800,
+    category: "Belts",
+    color: "Maroon",
+    fabric: "Velvet",
+    image: accessory3,
+    isNewArrival: true,
+    gender: "Women",
+    occasion: ["Party", "Festive"],
+  },
+  {
+    id: 3,
+    name: "Embroidered Potli Bag",
+    price: 5900,
+    category: "Bags",
+    color: "Ivory",
+    fabric: "Brocade",
+    image: accessory4,
+    isNewArrival: true,
+    gender: "Women",
+    occasion: ["Bridal", "Wedding"],
+  },
+  {
+    id: 4,
+    name: "Designer Sunglasses",
+    price: 3900,
+    category: "Other",
+    color: "Black",
+    fabric: "Acetate",
+    image: accessory5,
+    isNewArrival: true,
+    gender: "Men",
+    occasion: ["Party", "Festive"],
+  },
+  {
+    id: 5,
+    name: "Embroidered Handbag",
+    price: 7800,
+    category: "Bags",
+    color: "Rose Gold",
+    fabric: "Silk",
+    image: accessory6,
+    gender: "Women",
+    occasion: ["Bridal", "Wedding"],
+  },
+  {
+    id: 6,
+    name: "Printed Silk Scarf",
+    price: 2600,
+    category: "Scarves",
+    color: "Multi",
+    fabric: "Silk",
+    image: accessory7,
+    gender: "Women",
+    occasion: ["Party", "Festive"],
+  },
+  {
+    id: 7,
+    name: "Decorative Hair Clip",
+    price: 2300,
+    category: "Hair Accessories",
+    color: "Gold",
+    fabric: "Brass",
+    image: accessory8,
+    gender: "Women",
+    occasion: ["Bridal", "Wedding"],
+  },
+  {
+    id: 8,
+    name: "Embroidered Juttis",
+    price: 6900,
+    category: "Footwear",
+    color: "Gold",
+    fabric: "Leather",
+    image: accessory2,
+    gender: "Men",
+    occasion: ["Groom", "Wedding"],
+  },
+];
